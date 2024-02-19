@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.our-products{
+    margin: 15px 0 100px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 100px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container .container-head{
+    text-align: center;
+    margin: 25px 0;
+
+}
+
+.container .container-head .subheading{
+    color: #82ae46;
+    font-family: 18px;
+    margin: 10px 0;
+}
+
+.container .container-head h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.container .container-head .head-text{
+    font-size: 15px;
+    color: #808080;
+    margin: 16px 0;
+}
+
+.container .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container .cards .card{
+    display: flex;
+    width: calc(25% - 30px);
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    
+    
+    
+}
+
+.container .cards  .card .card-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.container .cards .card .card-inner .card-image{
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+   
+}
+.container .cards  .card .card-inner .card-image img{
+    width: 100%;
+    transition: .3s ease;
+}
+
+.container .cards .card .card-inner .card-image:hover img{
+    transform: scale(1.1);
+}
+
+.container .cards .card .card-inner .card-content{
+    text-align: center;
+    width: 100%;
+    padding: 25px 0px;
+    position: relative;
+}
+
+.container .cards .card .card-inner .card-content h3{
+    padding: 5px 0;
+}
+.container .cards .card .card-inner .card-content h3 a{
+    font-size: 15px;
+    font-weight: normal;
+    
+}
+
+.container .cards .card .card-inner .card-content p{
+    color: #82ae46;
+    font-size: 15px;
+    
+}
+.container .cards .card .card-inner .card-content p span{
+    text-decoration: line-through;
+    color: #b3b3b3;
+    font-size: 15px;
+
+}
+
+.container .cards .card:hover p{
+    visibility: hidden;
+}
+
+.container .cards .card .card-icon{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    visibility: hidden;
+    left: 0px;
+    bottom: 20px;
+    
+}
+
+.container .cards .card .card-icon i{
+    color: white;
+    background-color: #82ae46;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    
+    
+}
+
+.container .cards .card:hover .card-icon{
+
+    visibility: visible;
+
+}
+
+
+.container .cards  .card-discount{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #82ae46;
+    width: 40px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 3px 0;
+}
+
+
+
+
+@media (min-width: 0px){
+    .container .cards .card{
+        width: calc(100% - 30px);
+    }
+    .container .cards .card .card-icon{
+        left: 33%;
+    }
+}
+
+
+@media (min-width: 768px){
+    .container .cards .card{
+        width: calc(50% - 30px);
+       
+    }
+
+    .container .cards .card .card-icon{
+        left: 33%;
+    }
+}
+@media (min-width: 950px){
+    .container .cards .card{
+        width: calc(25% - 30px);
+    }
+}
